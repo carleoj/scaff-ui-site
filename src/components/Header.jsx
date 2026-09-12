@@ -134,7 +134,7 @@ export default function Header() {
 
             {/* GitHub */}
             <a
-              href="https://github.com/"
+              href="https://github.com/carleoj/scaff-ui"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-9 items-center gap-2 rounded-sm bg-zinc-500 px-3 text-sm font-medium text-white transition hover:bg-zinc-600"

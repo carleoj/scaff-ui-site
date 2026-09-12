@@ -17,7 +17,7 @@ export default function Banner() {
           <div className="max-w-xl">
             <h1 className="text-4xl font-light tracking-tight text-gray-900 sm:text-5xl">
               Scaffold the user interface{" "}
-              <span className="text-zinc-800">make it</span> yours
+              <span className="text-zinc-800">make it</span> your design
             </h1>
 
             <p className="mt-4 max-w-lg text-base text-pretty leading-relaxed text-gray-700 sm:text-lg">

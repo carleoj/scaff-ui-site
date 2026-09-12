@@ -8,54 +8,54 @@ const commons = [
     description: "Navigation patterns for different layouts.",
     command: "scf add header",
     variants: [
-      {
-        name: "With CTA",
-        image: "/images/commons/header-cta.png",
-      },
-      {
-        name: "Without CTA",
-        image: "/images/commons/header.png",
-      },
+      // {
+      //   name: "With CTA",
+      //   image: "/images/commons/header-cta.png",
+      // },
+      // {
+      //   name: "Without CTA",
+      //   image: "/images/commons/header.png",
+      // },
       {
         name: "Navigation only",
         image: navOnly,
       },
     ],
   },
-  {
-    title: "Hero Section",
-    description: "Hero layouts for landing and product pages.",
-    command: "scf add hero",
-    variants: [
-      {
-        name: "Default",
-        image: "/images/commons/hero.png",
-      },
-      {
-        name: "Centered",
-        image: "/images/commons/hero-centered.png",
-      },
-      {
-        name: "Split",
-        image: "/images/commons/hero-split.png",
-      },
-    ],
-  },
-  {
-    title: "Footer",
-    description: "Simple footer layouts for your pages.",
-    command: "scf add footer",
-    variants: [
-      {
-        name: "Default",
-        image: "/images/commons/footer.png",
-      },
-      {
-        name: "Centered",
-        image: "/images/commons/footer-centered.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Hero Section",
+  //   description: "Hero layouts for landing and product pages.",
+  //   command: "scf add hero",
+  //   variants: [
+  //     {
+  //       name: "Default",
+  //       image: "/images/commons/hero.png",
+  //     },
+  //     {
+  //       name: "Centered",
+  //       image: "/images/commons/hero-centered.png",
+  //     },
+  //     {
+  //       name: "Split",
+  //       image: "/images/commons/hero-split.png",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Footer",
+  //   description: "Simple footer layouts for your pages.",
+  //   command: "scf add footer",
+  //   variants: [
+  //     {
+  //       name: "Default",
+  //       image: "/images/commons/footer.png",
+  //     },
+  //     {
+  //       name: "Centered",
+  //       image: "/images/commons/footer-centered.png",
+  //     },
+  //   ],
+  // },
 ];
 
 export default function Commons() {

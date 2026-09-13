@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 export default function Banner() {
   return (
     <section className="bg-white">
-        <div className="mx-auto w-full max-w-7xl px-6 pb-12 pt-16 sm:px-8 sm:pb-16 sm:pt-20 lg:px-8 lg:pb-20 lg:pt-18">
+      <div className="mx-auto w-full max-w-7xl px-6 pb-12 pt-16 sm:px-8 sm:pb-16 sm:pt-20 lg:px-8 lg:pb-20 lg:pt-18">
         <div className="mx-auto grid max-w-5xl items-stretch gap-12 md:grid-cols-[3fr_2fr] lg:gap-16">
+          
           {/* Content */}
           <div className="flex h-full flex-col justify-center">
+            
             {/* Status */}
             <div className="mb-5 flex items-center gap-3 text-xs font-medium text-zinc-500">
               <span className="rounded-full border border-zinc-300 px-2.5 py-1">
@@ -17,14 +19,15 @@ export default function Banner() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-4xl font-light tracking-tight text-zinc-950 sm:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-light leading-tight tracking-tight text-zinc-950 sm:text-5xl lg:text-6xl">
               Scaffold the user interface{" "}
               <span className="text-zinc-700">make it</span> your design
             </h1>
 
             {/* Description */}
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-zinc-600 sm:text-lg">
-              A free, open-source CLI for customizable, responsive, minimalistic Tailwind CSS components.
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-zinc-600 sm:text-lg">
+              A free, open-source CLI for customizable, responsive, minimalistic
+              Tailwind CSS components.
             </p>
 
             {/* Installation */}
@@ -46,14 +49,14 @@ export default function Banner() {
               <div className="mt-4 flex w-full gap-3">
                 <Link
                   to="/commons"
-                  className="flex-1 rounded-sm border border-zinc-600 bg-zinc-600 px-4 py-2.5 text-center text-sm sm:text-base font-medium text-white shadow-sm transition-colors hover:bg-zinc-700 sm:px-5"
+                  className="flex min-h-14 flex-1 items-center justify-center rounded-sm border border-zinc-600 bg-zinc-600 px-2 text-center text-xs font-medium leading-tight text-white shadow-sm transition-colors hover:bg-zinc-700 sm:px-5 sm:text-base"
                 >
                   Browse Components
                 </Link>
 
                 <Link
                   to="/docs"
-                  className="flex-1 rounded-sm border border-zinc-300 bg-white px-4 py-2.5 text-center font-medium text-zinc-800 shadow-sm transition-colors hover:border-zinc-700 hover:bg-zinc-700 hover:text-white sm:px-5"
+                  className="flex min-h-14 flex-1 items-center justify-center rounded-sm border border-zinc-300 bg-white px-2 text-center text-xs font-medium leading-tight text-zinc-800 shadow-sm transition-colors hover:border-zinc-700 hover:bg-zinc-700 hover:text-white sm:px-5 sm:text-base"
                 >
                   Read the Docs
                 </Link>

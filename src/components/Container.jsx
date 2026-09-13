@@ -26,44 +26,21 @@ export default function Container({
   };
 
   return (
-    <article className="overflow-hidden rounded-xl border border-zinc-200 bg-white">
-      {/* Details + Preview */}
-      <div className="grid lg:grid-cols-[280px_1fr]">
-        {/* Details */}
-        <div className="flex flex-col justify-between border-b border-zinc-200 p-6 lg:border-b-0 lg:border-r">
-          <div>
-            <h2 className="text-xl font-medium tracking-tight text-zinc-950">
-              {title}
-            </h2>
-
-            <p className="mt-2 text-sm leading-6 text-zinc-500">
-              {description}
-            </p>
-          </div>
-
-          <div className="mt-6">
-            <span className="inline-flex rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
-              {variants.length}{" "}
-              {variants.length === 1 ? "variant" : "variants"}
-            </span>
-          </div>
-        </div>
-
-        {/* Image */}
-        <div className="flex min-h-70 items-center justify-center bg-zinc-50 p-6 sm:min-h-90">
-          <div className="w-full overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm">
-            <img
-              src={variant.image}
-              alt={`${title} — ${variant.name}`}
-              className="block h-auto w-full"
-            />
-          </div>
+    <article className="overflow-hidden rounded-xl border border-zinc-300 bg-white">
+      {/* Preview */}
+      <div className="bg-zinc-50 p-4 sm:p-6 lg:p-8">
+        <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+          <img
+            src={variant.image}
+            alt={`${title} — ${variant.name}`}
+            className="block h-auto w-full"
+          />
         </div>
       </div>
 
-      {/* Command */}
-      <div className="flex items-center justify-between gap-4 border-t border-zinc-200 bg-white px-6 py-4">
-        <code className="min-w-0 truncate text-sm text-zinc-600">
+      {/* Command / Actions */}
+      <div className="flex items-center justify-between gap-3 border-t border-zinc-300 px-4 py-3 sm:px-6">
+        <code className="min-w-0 flex-1 truncate text-sm text-zinc-600">
           {command}
         </code>
 
@@ -76,19 +53,28 @@ export default function Container({
                 onChange={(event) =>
                   setActiveVariant(Number(event.target.value))
                 }
-                className="appearance-none rounded-md border border-zinc-200 bg-white py-2 pl-3 pr-8 text-sm text-zinc-700 outline-none transition-colors hover:border-zinc-400 focus:border-zinc-500"
                 aria-label={`${title} variants`}
+                className="appearance-none rounded-md border border-zinc-200 bg-white py-2 pl-3 pr-8 text-sm text-zinc-700 outline-none transition-colors hover:border-zinc-400 focus:border-zinc-500"
               >
                 {variants.map((item, index) => (
                   <option key={item.name} value={index}>
-                    V {item.name}
+                    {item.name}
                   </option>
                 ))}
               </select>
 
-              <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-zinc-500">
-                V
-              </span>
+              <svg
+                className="pointer-events-none absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-zinc-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.938a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </div>
           )}
 
@@ -96,7 +82,7 @@ export default function Container({
           <button
             type="button"
             onClick={copyCommand}
-            className="rounded-md bg-zinc-950 px-4 py-2 text-sm text-white transition-colors hover:bg-zinc-800"
+            className="shrink-0 rounded-md bg-zinc-600 px-4 py-2 text-sm text-white transition-colors hover:cursor-pointer hover:bg-zinc-700"
           >
             {copied ? "Copied" : "Copy"}
           </button>

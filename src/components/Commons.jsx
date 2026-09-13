@@ -10,11 +10,11 @@ const commons = [
     variants: [
       // {
       //   name: "With CTA",
-      //   image: "/images/commons/header-cta.png",
+      //   image: headerCta,
       // },
       // {
       //   name: "Without CTA",
-      //   image: "/images/commons/header.png",
+      //   image: header,
       // },
       {
         name: "Navigation only",
@@ -22,25 +22,19 @@ const commons = [
       },
     ],
   },
+
   // {
-  //   title: "Hero Section",
+  //   title: "Hero",
   //   description: "Hero layouts for landing and product pages.",
   //   command: "scf add hero",
   //   variants: [
   //     {
   //       name: "Default",
-  //       image: "/images/commons/hero.png",
-  //     },
-  //     {
-  //       name: "Centered",
-  //       image: "/images/commons/hero-centered.png",
-  //     },
-  //     {
-  //       name: "Split",
-  //       image: "/images/commons/hero-split.png",
+  //       image: hero,
   //     },
   //   ],
   // },
+
   // {
   //   title: "Footer",
   //   description: "Simple footer layouts for your pages.",
@@ -48,11 +42,7 @@ const commons = [
   //   variants: [
   //     {
   //       name: "Default",
-  //       image: "/images/commons/footer.png",
-  //     },
-  //     {
-  //       name: "Centered",
-  //       image: "/images/commons/footer-centered.png",
+  //       image: footer,
   //     },
   //   ],
   // },
@@ -61,7 +51,8 @@ const commons = [
 export default function Commons() {
   return (
     <main id="commons" className="bg-white">
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+        {/* Back */}
         <Link
           to="/"
           className="mb-10 inline-flex items-center gap-2 text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-950"
@@ -80,24 +71,21 @@ export default function Commons() {
               d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
             />
           </svg>
-          Back to home
+          Commons
         </Link>
 
+        {/* Page heading */}
         <div className="mb-10">
-          <p className="text-xs font-medium uppercase tracking-[0.18em] text-zinc-500">
-            Commons
-          </p>
-
-          <h1 className="mt-2 text-3xl font-light tracking-tight text-zinc-950">
-            Ready-made components.
+          <h1 className="text-3xl font-light tracking-tight text-zinc-950">
+            Header
           </h1>
 
-          <p className="mt-2 max-w-2xl text-sm text-zinc-500">
-            Browse common interface patterns and add them to your project from
-            the command line.
+          <p className="mt-2 text-sm text-zinc-500">
+            Navigation patterns for different layouts.
           </p>
         </div>
 
+        {/* Components */}
         <div className="space-y-8">
           {commons.map((item) => (
             <Container key={item.command} {...item} />

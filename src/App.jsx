@@ -11,15 +11,19 @@ import "./index.css";
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <div className="flex min-h-screen flex-col">
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Banner />} />
-        <Route path="/commons" element={<Commons />} />
-        <Route path="/docs" element={<Docs />} />
-      </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Banner />} />
+            <Route path="/commons" element={<Commons />} />
+            <Route path="/docs" element={<Docs />} />
+          </Routes>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

@@ -24,8 +24,7 @@ export default function Banner() {
 
             {/* Description */}
             <p className="mt-5 max-w-xl text-base leading-relaxed text-zinc-600 sm:text-lg">
-              A free, open-source CLI for Tailwind CSS components and
-              responsive minimalistic web design.
+              A free, open-source CLI for customizable, responsive, minimalistic Tailwind CSS components.
             </p>
 
             {/* Installation */}

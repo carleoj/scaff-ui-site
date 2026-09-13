@@ -46,7 +46,7 @@ export default function Banner() {
               <div className="mt-4 flex w-full gap-3">
                 <Link
                   to="/commons"
-                  className="flex-1 rounded-sm border border-zinc-600 bg-zinc-600 px-4 py-2.5 text-center font-medium text-white shadow-sm transition-colors hover:bg-zinc-700 sm:px-5"
+                  className="flex-1 rounded-sm border border-zinc-600 bg-zinc-600 px-4 py-2.5 text-center text-sm sm:text-base font-medium text-white shadow-sm transition-colors hover:bg-zinc-700 sm:px-5"
                 >
                   Browse Components
                 </Link>

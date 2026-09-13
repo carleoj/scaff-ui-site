@@ -8,10 +8,14 @@
   font-family: var(--font-sans);
 }
 
-body,
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
 button,
 input,
 textarea,
 select {
-  font-family: var(--font-sans);
+  font: inherit;
 }

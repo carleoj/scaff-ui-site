@@ -28,6 +28,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+      <header className="z-50 border-b border-gray-200 bg-white/95 backdrop-blur"></header>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Left: Logo + Navigation */}
@@ -52,8 +53,8 @@ export default function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-7 text-sm font-medium">
+            <nav aria-label="Global" className="hidden lg:block">
+              <ul className="flex items-center gap-7 whitespace-nowrap text-sm font-medium">
                 {navLinks.map((link) => (
                   <li key={link.label}>
                     <Link
@@ -156,7 +157,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen((open) => !open)}
-              className="rounded-lg p-2 text-gray-600 transition hover:bg-gray-100 hover:text-gray-950 md:hidden"
+              className="rounded-lg p-2 text-gray-600 transition hover:bg-gray-100 hover:text-gray-950 lg:hidden"
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-navigation"
               aria-label={

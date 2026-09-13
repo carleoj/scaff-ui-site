@@ -118,7 +118,7 @@ export default function Docs() {
                 className="rounded border border-zinc-200 bg-zinc-50 p-4 sm:p-8"
               >
                 <div className="flex gap-3 sm:gap-8">
-                  <span className="text-sm font-medium text-teal-700">
+                  <span className="text-sm font-medium text-zinc-700">
                     {step.number}
                   </span>
 

@@ -13,7 +13,7 @@ export default function Banner() {
                 Beta
               </span>
 
-              <span>v0.1.0</span>
+              <span>v0.1.3</span>
             </div>
 
             {/* Heading */}
@@ -49,7 +49,7 @@ export default function Banner() {
                   to="/commons"
                   className="flex-1 rounded-sm border border-zinc-600 bg-zinc-600 px-4 py-2.5 text-center font-medium text-white shadow-sm transition-colors hover:bg-zinc-700 sm:px-5"
                 >
-                  Browse Commons
+                  Browse Components
                 </Link>
 
                 <Link

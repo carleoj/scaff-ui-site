@@ -89,17 +89,16 @@ export default function Docs() {
               Documentation
             </p>
             <h2 className="mt-3 text-4xl font-light tracking-tight text-zinc-950 sm:text-5xl">
-              From command line to interface.
+              From scaffold to your interface.
             </h2>
             <p className="mt-5 max-w-md text-base leading-7 text-zinc-500">
-              Install Scaff UI once, then add polished Tailwind CSS patterns to
-              your project whenever you need them.
+              Generate ready-made Tailwind CSS components and customize them to fit your project.
             </p>
             <Link
               to="/commons"
               className="mt-8 inline-flex rounded-sm border border-zinc-300 px-4 py-2.5 text-sm font-medium text-zinc-800 transition-colors hover:border-zinc-700 hover:bg-zinc-700 hover:text-white"
             >
-              Browse Designs
+              Browse Commons
             </Link>
           </div>
 

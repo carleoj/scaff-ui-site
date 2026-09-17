@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import Commons from "./components/Commons";
 import Docs from "./components/Docs";
 import Footer from "./components/Footer";
+import Components from "./components/Components";
 
 import "./index.css";
 
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Banner />} />
             <Route path="/commons" element={<Commons />} />
+            <Route path="/components" element={<Components />} />
             <Route path="/docs" element={<Docs />} />
           </Routes>
         </main>

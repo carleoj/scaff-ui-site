@@ -10,7 +10,7 @@ export default function Header() {
   const navLinks = [
     { label: "Get Started", to: "/docs" },
     { label: "Commons", to: "/commons" },
-    { label: "Components", to: "/commons" },
+    { label: "Components", to: "/components" },
     { label: "Cards", to: "/commons" },
   ];
 

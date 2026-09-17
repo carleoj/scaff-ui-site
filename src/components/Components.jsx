@@ -1,57 +1,35 @@
 import Container from "./Container";
-import nav from "../images/navigation.png";
-import logoNav from "../images/logo-navigation.png";
-import logoNavCta from "../images/logo-navigation-cta.png";
-import headDescBtnImg from "../images/head-desc-btn-img.png";
-import footerCopyrightNav from "../images/footer-copyright-nav.png";
-
+import textAreaActsOut from "../images/text-area-actions-out.png"
+import basicNewsLetter from "../images/newsletter.png"
 
 import { Link } from "react-router-dom";
 
-const commons = [
+const components = [
   {
-    title: "Header",
-    command: "scf add header",
+    title: "Text Area",
+    command: "scf add text-area",
     variants: [
-      // {
-      //   name: "Nav",
-      //   image: nav,
-      // },
-      // {
-      //   name: "Logo + Nav",
-      //   image: logoNav,
-      // },
       {
-        name: "Logo + Nav + CTA",
-        image: logoNavCta,
+        name: "Basic + Actions Outside",
+        image: textAreaActsOut,
       },
     ],
   },
   {
-    title: "Hero",
-    command: "scf add hero",
+    title: "Newsletter",
+    command: "scf add newsletter",
     variants: [
       {
-        name: "Heading + Description + CTA + Image",
-        image: headDescBtnImg,
-      },
-    ],
-  },
-  {
-    title: "Footer",
-    command: "scf add footer",
-    variants: [
-      {
-        name: "Copyright + Navigation Links",
-        image: footerCopyrightNav,
+        name: "Basic Newsletter",
+        image: basicNewsLetter,
       },
     ],
   },
 ];
 
-export default function Commons() {
+export default function Components() {
   return (
-    <main id="commons" className="bg-white">
+    <main id="components" className="bg-white">
       <section className="mx-auto max-w-7xl px-6 sm:px-8">
         {/* Back navigation */}
         <div className="sticky top-16 z-40 bg-white py-3">
@@ -73,17 +51,17 @@ export default function Commons() {
                 d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
               />
             </svg>
-            Commons
+            Components
           </Link>
         </div>
 
-        {/* Commons */}
+        {/* Components */}
         <div className="space-y-12 pb-16 lg:px-15">
-          {commons.map((item) => (
+          {components.map((item) => (
             <section key={item.command}>
               {/* Component heading */}
               <div className="pt-8">
-                <h1 className="font-semibold border-b border-zinc-500 pb-3 text-3xl tracking-tight text-zinc-950">
+                <h1 className="border-b border-zinc-500 pb-3 text-3xl font-semibold tracking-tight text-zinc-950">
                   {item.title}
                 </h1>
 
@@ -104,10 +82,7 @@ export default function Commons() {
 
               {/* Variants */}
               <div className="mt-6">
-                <Container
-                  title={item.title}
-                  variants={item.variants}
-                />
+                <Container title={item.title} variants={item.variants} />
               </div>
             </section>
           ))}

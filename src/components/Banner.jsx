@@ -15,7 +15,7 @@ export default function Banner() {
                 Beta
               </span>
 
-              <span>v0.1.3</span>
+              <span>v0.1.4</span>
             </div>
 
             {/* Heading */}

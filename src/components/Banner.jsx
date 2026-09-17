@@ -36,7 +36,7 @@ export default function Banner() {
 
                 <button
                   type="button"
-                  className="shrink-0 text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-950"
+                  className="hover:cursor-pointer shrink-0 text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-950"
                 >
                   Copy
                 </button>

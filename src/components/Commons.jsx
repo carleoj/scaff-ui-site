@@ -3,6 +3,8 @@ import nav from "../images/navigation.png";
 import logoNav from "../images/logo-navigation.png";
 import logoNavCta from "../images/logo-navigation-cta.png";
 import headDescBtnImg from "../images/head-desc-btn-img.png";
+import footerCopyrightNav from "../images/footer-copyright-nav.png";
+
 
 import { Link } from "react-router-dom";
 
@@ -32,6 +34,16 @@ const commons = [
       {
         name: "Heading + Description + CTA + Image",
         image: headDescBtnImg,
+      },
+    ],
+  },
+  {
+    title: "Footer",
+    command: "scf add footer",
+    variants: [
+      {
+        name: "Copyright + Navigation Links",
+        image: footerCopyrightNav,
       },
     ],
   },

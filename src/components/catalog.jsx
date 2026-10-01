@@ -1,10 +1,8 @@
-import {
-  LiveFooter,
-  LiveHero,
-  LiveNavigation,
-  LiveNewsletter,
-  LiveTextArea,
-} from "./previews";
+import Footer from "scaff-ui/src/templates/react/footer/copyright-navigation.jsx";
+import Hero from "scaff-ui/src/templates/react/hero/heading-description-button-image.jsx";
+import Header from "scaff-ui/src/templates/react/header/logo-navigation-cta.jsx";
+import Newsletter from "scaff-ui/src/templates/react/newsletter/basic-newsletter.jsx";
+import TextArea from "scaff-ui/src/templates/react/text-area/actions-outside.jsx";
 
 export const viewportOptions = [
   { id: "mobile", label: "Mobile", width: 375 },
@@ -22,7 +20,7 @@ export const publishedComponents = [
       {
         id: "basic-actions",
         name: "Basic + Actions Outside",
-        render: LiveTextArea,
+        render: TextArea,
       },
     ],
   },
@@ -35,7 +33,7 @@ export const publishedComponents = [
       {
         id: "basic-newsletter",
         name: "Basic Newsletter",
-        render: LiveNewsletter,
+        render: Newsletter,
       },
     ],
   },
@@ -45,7 +43,7 @@ export const publishedComponents = [
     category: "Commons",
     command: "scf add header",
     variants: [
-      { id: "logo-nav-cta", name: "Logo + Nav + CTA", render: LiveNavigation },
+      { id: "logo-nav-cta", name: "Logo + Nav + CTA", render: Header },
     ],
   },
   {
@@ -57,7 +55,8 @@ export const publishedComponents = [
       {
         id: "heading-description-cta",
         name: "Heading + Description + CTA + Image",
-        render: LiveHero,
+        previewClassName: "preview-hero",
+        render: Hero,
       },
     ],
   },
@@ -70,7 +69,7 @@ export const publishedComponents = [
       {
         id: "copyright-navigation",
         name: "Copyright + Navigation Links",
-        render: LiveFooter,
+        render: Footer,
       },
     ],
   },

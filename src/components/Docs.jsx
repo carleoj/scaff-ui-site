@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import BackLink from "./BackLink";
 
 const steps = [
   {
@@ -67,29 +68,9 @@ export default function Docs() {
       className="border-t border-zinc-200 bg-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
     >
       <div className="mx-auto max-w-7xl">
+        <BackLink label="Back" />
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <Link
-              to="/"
-              className="mb-10 inline-flex items-center gap-2 text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-950"
-            >
-              <svg
-                className="size-4 shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-                />
-              </svg>
-              Back
-            </Link>
-
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-zinc-500">
               Documentation
             </p>
